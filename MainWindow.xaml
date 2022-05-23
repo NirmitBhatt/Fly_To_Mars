@@ -1,0 +1,68 @@
+﻿<Window x:Class="Fly_To_Mars.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fly_To_Mars"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Fly to MARS!" Height="650" Width="950" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2.5*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Name="Img_MarsSurface" Source="/Marssurface.png" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Stretch="Fill"/>
+        <Image Name="Img_MarsSurface02" Source="/MarsSurface02.jpg" Grid.Row="2" Stretch="Fill"/>
+        <Image Name="Img_SpaceTitle01" Source="/spacemain.png" Grid.Column="1" Stretch="Fill"/>
+        <Image Name="Img_SpaceTitle00" Source="/spacemain.png" Stretch="Fill"/>
+        <Image Name="Img_SpaceTitle012" Source="/spacemain.png" Grid.Column="2" Stretch="Fill"/>
+        <Image Name="Img_SpaceTitle02" Source="/SpaceMainSidebar.png" Grid.Row="1" Stretch="Fill"/>
+        <Image Name="Img_SpaceTitle03" Source="/SpaceMainSidebar.png" Grid.Row="1" Grid.Column="2" Stretch="Fill"/>
+        <TextBlock Name="Txt_Title" Text="FLY TO MARS!" Background="Transparent" Foreground="#ba3c1c" FontSize="50" FontFamily="Fonts/#Robot Invaders" Grid.Column="1" VerticalAlignment="Center" Height="70" Width="400" TextAlignment="Center"/>
+
+
+        <StackPanel Background="Black" Grid.Column="1" Grid.Row="1">
+            <TextBlock Name="Txt_Hello01" Foreground="#c1e6be" FontSize="10" Margin="9,7" FontFamily="Fonts/#Public Pixel" TextWrapping="Wrap" Height="15"/>
+            <TextBlock Name="Txt_NameQ02" Foreground="#c1e6be" FontSize="10" Margin="9,7" FontFamily="Fonts/#Public Pixel" TextWrapping="Wrap" Height="25" LineHeight="12"/>
+            <TextBox Name="TxtBox_Name" Background="Black" Foreground="#c1e6be" FontFamily="/Fonts/#Public Pixel" Margin="9,3,0,6" BorderBrush="#FF020202" Padding="4" KeyDown="TxtBox_Name_KeyDown" PreviewTextInput="TxtBox_Name_PreviewTextInput"/>
+            <TextBlock Name="Txt_Welcome03" Foreground="#c1e6be" FontSize="10" Margin="9,7" FontFamily="Fonts/#Public Pixel" TextWrapping="Wrap" Height="30" LineHeight="12"/>
+            <TextBlock Name="Txt_RoverNeed04" Foreground="#c1e6be" FontSize="10" Margin="9,7" FontFamily="Fonts/#Public Pixel" TextWrapping="Wrap" Height="40" LineHeight="12"/>
+            <TextBlock Name="Txt_RoverNameQ05" Foreground="#c1e6be" FontSize="10" Margin="9,7" FontFamily="Fonts/#Public Pixel" TextWrapping="Wrap" Height="10" LineHeight="12"/>
+            <TextBox Name="TxtBox_RoverName" Background="Black" Foreground="#c1e6be" FontFamily="/Fonts/#Public Pixel" Margin="9,3,0,6" BorderBrush="#FF020202" Padding="4" KeyDown="TxtBox_RoverName_KeyDown"/>
+            <TextBlock Name="Txt_CoolName06" Foreground="#c1e6be" FontSize="10" Margin="9,7" FontFamily="Fonts/#Public Pixel" TextWrapping="Wrap" Height="30" LineHeight="12"/>
+            <TextBlock Name="Txt_Ready07" Foreground="#c1e6be" FontSize="10" Margin="9,7" FontFamily="Fonts/#Public Pixel" TextWrapping="Wrap" Height="30" LineHeight="12"/>
+            
+        </StackPanel>
+        <Button Name="Btn_Launch" Content="LAUNCH" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="5" Width="100" Height="100" Foreground="#eae8d3" FontSize="22" Click="Btn_Launch_Click" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Stroke="Black"
+                         StrokeThickness="1">
+                            <Ellipse.Fill>
+                                <RadialGradientBrush>
+                                    <GradientStop Offset="0"
+                                          Color="#ba3c1c" />
+                                    <RadialGradientBrush.Transform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleY="0.55" />
+                                        </TransformGroup>
+                                    </RadialGradientBrush.Transform>
+                                </RadialGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>

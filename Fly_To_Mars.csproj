@@ -1,0 +1,138 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ArrowKeyDown_off.png" />
+    <None Remove="ArrowKeyLeft_off.png" />
+    <None Remove="ArrowKeyRight_off.png" />
+    <None Remove="ArrowKey_off.png" />
+    <None Remove="Comet.png" />
+    <None Remove="ConsoleBg.png" />
+    <None Remove="DeepSpace.jpg" />
+    <None Remove="Earth.png" />
+    <None Remove="Fonts\PublicPixel.ttf" />
+    <None Remove="Fonts\RobotInvaders.ttf" />
+    <None Remove="Images\ArrowKeyDown_off.png" />
+    <None Remove="Images\ArrowKeyDown_on.png" />
+    <None Remove="Images\ArrowKeyLeft_off.png" />
+    <None Remove="Images\ArrowKeyLeft_on.png" />
+    <None Remove="Images\ArrowKeyRight_off.png" />
+    <None Remove="Images\ArrowKeyRight_on.png" />
+    <None Remove="Images\ArrowKey_off.png" />
+    <None Remove="Images\ArrowKey_on.png" />
+    <None Remove="Images\Comet.png" />
+    <None Remove="Images\ConsoleBg.png" />
+    <None Remove="Images\DeepSpace.jpg" />
+    <None Remove="Images\Earth.png" />
+    <None Remove="Images\Mars.png" />
+    <None Remove="Images\Marssurface.png" />
+    <None Remove="Images\MarsSurface02.jpg" />
+    <None Remove="Images\Meteor01_v1.png" />
+    <None Remove="Images\Meteor01_v2.png" />
+    <None Remove="Images\Meteor01_v3.png" />
+    <None Remove="Images\Meteor01_v4.png" />
+    <None Remove="Images\Meteor02_v1.png" />
+    <None Remove="Images\Meteor02_v2.png" />
+    <None Remove="Images\Meteor02_v3.png" />
+    <None Remove="Images\Meteor02_v4.png" />
+    <None Remove="Images\PixelSpace.gif" />
+    <None Remove="Images\Rover.png" />
+    <None Remove="Images\RoverDown.png" />
+    <None Remove="Images\RoverLeft.png" />
+    <None Remove="Images\RoverRight.png" />
+    <None Remove="Images\SimSpace.jpg" />
+    <None Remove="Images\spacemain.png" />
+    <None Remove="Images\SpaceMainSidebar.png" />
+    <None Remove="Mars.png" />
+    <None Remove="Marssurface.png" />
+    <None Remove="MarsSurface02.jpg" />
+    <None Remove="Meteor01_v1.png" />
+    <None Remove="Meteor01_v2.png" />
+    <None Remove="Meteor01_v3.png" />
+    <None Remove="Meteor02_v1.png" />
+    <None Remove="Meteor02_v3.png" />
+    <None Remove="PixelSpace.gif" />
+    <None Remove="rover.jpg" />
+    <None Remove="Rover.png" />
+    <None Remove="SimSpace.jpg" />
+    <None Remove="spacemain.png" />
+    <None Remove="SpaceMain02.png" />
+    <None Remove="SpaceMainSidebar.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ArrowKeyDown_off.png" />
+    <Resource Include="ArrowKeyLeft_off.png" />
+    <Resource Include="ArrowKeyRight_off.png" />
+    <Resource Include="ArrowKey_off.png" />
+    <Resource Include="ConsoleBg.png" />
+    <Resource Include="Earth.png" />
+    <Resource Include="Images\ArrowKeyDown_off.png" />
+    <Resource Include="Images\ArrowKeyDown_on.png" />
+    <Resource Include="Images\ArrowKeyLeft_off.png" />
+    <Resource Include="Images\ArrowKeyLeft_on.png" />
+    <Resource Include="Images\ArrowKeyRight_off.png" />
+    <Resource Include="Images\ArrowKeyRight_on.png" />
+    <Resource Include="Images\ArrowKey_off.png" />
+    <Resource Include="Images\ArrowKey_on.png" />
+    <Resource Include="Images\ConsoleBg.png" />
+    <Resource Include="Images\SpaceMainSidebar.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Comet.png" />
+    <Resource Include="DeepSpace.jpg" />
+    <Resource Include="Fonts\RobotInvaders.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Comet.png" />
+    <Resource Include="Images\DeepSpace.jpg" />
+    <Resource Include="Images\Earth.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\PublicPixel.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Mars.png" />
+    <Resource Include="Images\Marssurface.png" />
+    <Resource Include="Images\MarsSurface02.jpg" />
+    <Resource Include="Images\Meteor01_v1.png" />
+    <Resource Include="Images\Meteor01_v2.png" />
+    <Resource Include="Images\Meteor01_v3.png" />
+    <Resource Include="Images\Meteor01_v4.png" />
+    <Resource Include="Images\Meteor02_v1.png" />
+    <Resource Include="Images\Meteor02_v2.png" />
+    <Resource Include="Images\Meteor02_v3.png" />
+    <Resource Include="Images\Meteor02_v4.png" />
+    <Resource Include="Images\PixelSpace.gif" />
+    <Resource Include="Images\Rover.png" />
+    <Resource Include="Images\RoverDown.png" />
+    <Resource Include="Images\RoverLeft.png" />
+    <Resource Include="Images\RoverRight.png" />
+    <Resource Include="Images\SimSpace.jpg" />
+    <Resource Include="Images\spacemain.png" />
+    <Resource Include="Mars.png" />
+    <Resource Include="Marssurface.png" />
+    <Resource Include="MarsSurface02.jpg" />
+    <Resource Include="Meteor01_v1.png" />
+    <Resource Include="Meteor01_v2.png" />
+    <Resource Include="Meteor01_v3.png" />
+    <Resource Include="Meteor02_v1.png" />
+    <Resource Include="Meteor02_v3.png" />
+    <Resource Include="PixelSpace.gif" />
+    <Resource Include="rover.jpg" />
+    <Resource Include="Rover.png" />
+    <Resource Include="SimSpace.jpg" />
+    <Resource Include="spacemain.png" />
+    <Resource Include="SpaceMain02.png" />
+    <Resource Include="SpaceMainSidebar.png" />
+  </ItemGroup>
+
+</Project>
